@@ -11683,9 +11683,17 @@ body {
 .contact-section {
   padding-top: 5rem;
 }
-.contact-section .card {
+#cardmagenta {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #e71d73;
+}
+#cardyellow {
+  border: 0;
+  border-bottom: 0.25rem solid #f9b233;
+}
+#cardgreen {
+  border: 0;
+  border-bottom: 0.25rem solid #00a19a;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -11726,16 +11734,30 @@ body {
 .about-btn {
   margin-top: -50px;
   margin-bottom: 20px;
-  background-color: #e71d73;
-  border-color: #e71d73;
+  background-color: #be3973;
+  border-color: #be3973;
 }
 
 .about-btn:hover {
   margin-top: -50px;
   margin-bottom: 20px;
-  background-color: #be3973;
-  border-color: #be3973;
+  background-color: #e71d73;
+  border-color: #e71d73;
 }
 
 /* AnttGiam CSS */
 
+#logo {
+  max-width: 40%;
+}
+
+li {
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#divisoreFooter{
+  padding: 10px;
+  height: 20px;
+}
