@@ -11539,27 +11539,27 @@ body {
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
   }
-  #mainNav .nav-link:active {
+  .nav-link:active {
     color: #fff;
   }
-  #mainNav.navbar-shrink {
-    background-color: #242e5c;
+  .navbar-shrink {
+    background-color: #242e5c !important;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  .navbar-shrink .navbar-brand {
     color: #000;
   }
-  #mainNav.navbar-shrink .nav-link {
+  .navbar-shrink .nav-link {
     color: #fff;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
-  #mainNav.navbar-shrink .nav-link:hover {
+  .navbar-shrink .nav-link:hover {
     color: #fff;
   }
-  #mainNav.navbar-shrink .nav-link:active {
+  .navbar-shrink .nav-link:active {
     color: #fff;
   }
-  #mainNav.navbar-shrink .nav-link.active {
+  .navbar-shrink .nav-link.active {
     color: #fff;
     outline: none;
     border-bottom: 0.25rem solid #fff;
@@ -11760,4 +11760,12 @@ li {
 #divisoreFooter{
   padding: 10px;
   height: 20px;
+}
+
+#headWAYouthers{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/fiera.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }

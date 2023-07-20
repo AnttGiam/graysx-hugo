@@ -4,32 +4,28 @@
 <body id="page-top">
 {{- partial "header.html" . -}}
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" id="headWAYouthers">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        {{ with site.Data.homepage.main }}
+                        {{ with site.Data.wayouthers.main }}
                         <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
-                        <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
                         {{ end }}
                     </div>
                 </div>
             </div>
         </header>
         <!-- About-->
-        {{ with site.Data.homepage.about }}
+        {{ with site.Data.wayouthers.about }}
         <section class="about-section text-center">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">{{ .title }}</h2>
                         <p class="text-white-50">{{ .desc }}</p>
-                        {{ if .button.enable }}
-                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
-                        {{ end }}
+                        <div style="margin-bottom: -75px;"></div>
                     </div>
                 </div>
-
             </div>
         </section>
         {{ end }}
@@ -80,64 +76,6 @@
             </div>
         </section>
         {{ end }}
-        <!-- Contact-->
-        <section class="contact-section bg-wy" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100" id="cardmagenta">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-magenta-wy mb-2"></i>
-                                <h4 class="text-uppercase m-0">Indirizzo</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">{{ site.Params.address }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100" id="cardyellow">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-yellow-wy mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email Amministrazione</h4>
-                                <hr class="my-2 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">{{ site.Params.emailamministrazione }}</a></div>
-                                <div class="my-4"></div>
-                                <h4 class="text-uppercase m-0">Email Info</h4>
-                                <hr class="my-2 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">{{ site.Params.emailinfo }}</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100" id="cardgreen">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-green-wy mb-2"></i>
-                                <h4 class="text-uppercase m-0">Recapito Relazioni Esterne</h4>
-                                <div class="my-2"></div>
-                                <h4 class="text-uppercase m-0">Giuseppe Spina</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">{{ site.Params.phonepeppe }}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="{{ site.Params.instagram }}"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="mx-2" href="{{ site.Params.linkedin }}"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-        <div class="bg-wy" id="divisoreFooter"></div>
-<!-- Footer-->
-<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; {{ .Name }} {{ now.Format "2006"}}</div></footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+{{- partial "footer.html" . -}} 
 </body>
 </html>
